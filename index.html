@@ -1,182 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jessika Catharina — Portfólio</title>
-  <meta name="description" content="Portfólio de Jessika Catharina — Designer Gráfica & Sistemas de Informação" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jessika Rodrigues - Portfólio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1>Jessika Catharina</h1>
-        <p class="tag">Designer Gráfica • UI/UX • Sistemas de Informação</p>
-      </div>
-
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-        ☰
-      </button>
-
-      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#cv">Currículo</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <h1>Jessika Rodrigues</h1>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#certificacoes">Certificações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero container" id="home">
-      <div class="hero-left">
-        <h2>Olá, sou Jessika</h2>
-        <p class="lead">
-          Graduanda em Sistemas de Informação (7º semestre) com 4 anos de experiência em TI. 
-          Trabalho com suporte técnico, design digital e UX — criando soluções focadas em usabilidade e resultados.
-        </p>
-        <div class="cta">
-          <a class="btn" href="#projects">Ver projetos</a>
-          <a class="btn btn-ghost" href="Curriculo_Jessika_Formal_Minimalista.pdf" download>Baixar CV (PDF)</a>
-        </div>
+  <section id="sobre" class="section">
+    <img src="sua-foto.jpg" alt="Jessika Rodrigues" class="foto" />
+    <h2>Olá, eu sou Jessika</h2>
+    <p>
+      Designer Gráfica e Desenvolvedora com 4 anos de experiência em TI. 
+      Estudante de Sistemas de Informação e apaixonada por transformar ideias em projetos digitais.
+    </p>
+  </section>
+
+  <section id="projetos" class="section">
+    <h2>Projetos</h2>
+    <div class="projetos-container">
+      <div class="projeto">
+        <h3>Projeto 1 - Nome</h3>
+        <p>Descrição breve do projeto e suas tecnologias.</p>
+        <a href="https://linkdoprojeto.com" target="_blank" rel="noopener noreferrer">Ver projeto</a>
       </div>
-      <div class="hero-right">
-        <img src="assets/avatar.jpg" alt="Foto de Jessika" class="avatar" />
+      <div class="projeto">
+        <h3>Projeto 2 - Nome</h3>
+        <p>Descrição breve do projeto e suas tecnologias.</p>
+        <a href="https://linkdoprojeto2.com" target="_blank" rel="noopener noreferrer">Ver projeto</a>
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="container about">
-      <h3>Sobre</h3>
-      <div class="about-grid">
-        <div>
-          <h4>Perfil</h4>
-          <p>
-            Estudante de Sistemas de Informação com experiência prática em suporte técnico, otimização de processos e criação de conteúdo visual. Proativa, organizada e orientada a resultados.
-          </p>
-        </div>
-        <div>
-          <h4>Formação</h4>
-          <ul>
-            <li>Sistemas de Informação — Faculdade Antonio Meneghetti (cursando)</li>
-            <li>Técnico em Informática — Instituto Federal Farroupilha</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="container projects">
-      <h3>Projetos</h3>
-      <p class="section-sub">Casos selecionados que demonstram habilidade em design, usabilidade e suporte técnico.</p>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <article class="project-card">
-          <img src="assets/project1.jpg" alt="Projeto 1 — Social Media" />
-          <div class="project-body">
-            <h4>Gestão de Mídias — Evolution IT Service</h4>
-            <p class="project-desc">Planejamento de conteúdo e criação visual que aumentaram o engajamento e o alcance orgânico.</p>
-            <p class="project-meta"><strong>Responsabilidade:</strong> Social Media / Design</p>
-            <button class="project-btn" data-project="1">Ver detalhes</button>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card">
-          <img src="assets/project2.jpg" alt="Projeto 2 — Infraestrutura" />
-          <div class="project-body">
-            <h4>Otimização de Infraestrutura</h4>
-            <p class="project-desc">Aprimoramentos que reduziram tempo de resolução de chamados e melhoraram a estabilidade.</p>
-            <p class="project-meta"><strong>Responsabilidade:</strong> Suporte Técnico / Infra</p>
-            <button class="project-btn" data-project="2">Ver detalhes</button>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project-card">
-          <img src="assets/project3.jpg" alt="Projeto 3 — UX/UI" />
-          <div class="project-body">
-            <h4>Design UX — Case Acadêmico</h4>
-            <p class="project-desc">Propostas de interface no Figma aplicando heurísticas de usabilidade e prototipação.</p>
-            <p class="project-meta"><strong>Responsabilidade:</strong> UX / Prototipação</p>
-            <button class="project-btn" data-project="3">Ver detalhes</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CV -->
-    <section id="cv" class="container cv">
-      <h3>Currículo</h3>
-      <p>Experiência: Evolution IT Service (Social Media / Analyst), Polux-Net, Forte Security, Fundação Antonio Meneghetti.</p>
-
-      <div class="two-col">
-        <div>
-          <h4>Habilidades Técnicas</h4>
-          <ul>
-            <li>Figma (Avançado), Adobe Suite (Intermediário), Canva</li>
-            <li>Active Directory, Manutenção de computadores</li>
-            <li>Ubiquiti UniFi (Básico)</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Competências</h4>
-          <ul>
-            <li>Comunicação, Resolução de Problemas</li>
-            <li>Organização, Criatividade</li>
-            <li>Trabalho em equipe e foco em resultados</li>
-          </ul>
-        </div>
-      </div>
-
-      <p class="cv-download">
-        <a class="btn" href="Curriculo_Jessika_Formal_Minimalista.pdf" download>Baixar CV (PDF)</a>
-      </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="container contact">
-      <h3>Contato</h3>
-      <p>Quer conversar sobre um projeto ou vaga? Envie uma mensagem.</p>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h4>Contato direto</h4>
-          <p>📱 (55) 9 9723-9992</p>
-          <p>✉️ <a href="mailto:jessikacjrodrigues@gmail.com">jessikacjrodrigues@gmail.com</a></p>
-          <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://github.com/jesscatt" target="_blank" rel="noopener">GitHub</a></p>
-        </div>
-
-        <form class="contact-form" action="mailto:jessikacjrodrigues@gmail.com" method="post" enctype="text/plain">
-          <label for="name">Nome</label>
-          <input id="name" name="name" required />
-
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-
-          <div class="form-actions">
-            <button type="submit" class="btn">Enviar</button>
-            <button type="reset" class="btn btn-ghost">Limpar</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Jessika Catharina — Todos os direitos reservados.</p>
+      <!-- Adicione mais projetos aqui -->
     </div>
-  </footer>
+  </section>
 
-  <script src="scripts.js"></script>
-</body>
-</html>
+  <section id="certificacoes" class="section">
+    <h2>Certificações</h2>
+    <ul>
+      <li>Certificação 1 - Instituição - Ano</li>
+      <li>Certificação 2 - Instituição - Ano</li>
+      <li>Certificação 3 - Instituição - Ano</li>
+      <!-- Mais certificações -->
+    </ul>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:seuemail@example.com">seuemai
